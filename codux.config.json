@@ -9,6 +9,12 @@
     "componentsPath": "src/components",
     "templatesPath": "src/_codux/component-templates"
   },
+  "resolve": {
+    "alias": {
+      "components": "./src/components",
+      "assets/*": "./src/assets/*"
+    }
+  },
   "safeRender": {
     "maxInstancesPerComponent": 1000
   },
@@ -24,4 +30,5 @@
     "solution": "scss modules"
   },
   "svgLoader": "both"
+
 }
