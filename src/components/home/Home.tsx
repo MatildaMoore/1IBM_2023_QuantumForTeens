@@ -12,9 +12,11 @@ function Home() {
                     <HelpButton onClick={() => alert('Help logo clicked!')} />
                 </div>
             </header>
-
+            <p>Home Page</p>
+            <a href="/quantum-computer">Quantum Computer</a>
             <div className={styles.card}>
                 <div>
+
                     <ClickableLogo logoSrc={logo} onClick={() => alert('1st logo clicked!')}/>
                     <ClickableLogo logoSrc={logo} onClick={() => alert('2nd logo clicked!')}/>
                     <ClickableLogo logoSrc={logo} onClick={() => alert('3rd logo clicked!')}/>
