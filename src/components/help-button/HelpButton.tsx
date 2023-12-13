@@ -1,6 +1,6 @@
 import React, { MouseEventHandler } from 'react';
-import { ClickableLogo } from '../clickable-logo/ClickableLogo';
-import logo from '../../assets/help-button.png';
+import { ClickableLogo } from 'components';
+import logo from 'assets/images/help-button.png';
 
 interface HelpLogoProps {
     className?: string;
