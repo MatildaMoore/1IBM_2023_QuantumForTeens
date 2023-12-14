@@ -7,24 +7,17 @@ function Home() {
 
     return (
         <div className={styles.App}>
-            <header>
-                <div>
+            <body className={styles.body}>   
+                <div className={styles.header_div}>           
                     <HelpButton onClick={() => alert('Help logo clicked!')} />
                 </div>
-            </header>
-            <p>Home Page</p>
-            <a href="/quantum-computer">Quantum Computer</a>
-            <div className={styles.card}>
-                <div>
-
-                    <ClickableLogo logoSrc={logo} onClick={() => alert('1st logo clicked!')}/>
-                    <ClickableLogo logoSrc={logo} onClick={() => alert('2nd logo clicked!')}/>
-                    <ClickableLogo logoSrc={logo} onClick={() => alert('3rd logo clicked!')}/>
+                <h1 className={styles.title}>Quantum Learning</h1>
+                <div className={styles.header_div}> 
+                    <button id = "qcButton" className={styles.logo}>Quantum Computer</button>
+                    <button className={styles.logo}>Games</button>
+                    <button className={styles.logo}>Q-Sphere</button>
                 </div>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
+            </body>
         </div>
     );
 }
