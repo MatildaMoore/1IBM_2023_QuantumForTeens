@@ -6,15 +6,15 @@ import styles from './App.module.scss';
 
 function App() {
     return (
-        <Router>
-            <div>
+        <div>
+            <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/quantum-computer" element={<QuantumComputer />} />
                     <Route path="/q-sphere" element={<QSphere />} />
                 </Routes>
-            </div>
-        </Router>
+            </Router>
+        </div>
     );
 }
 

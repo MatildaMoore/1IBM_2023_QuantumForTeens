@@ -6,20 +6,12 @@ function QuantumComputer() {
 
     return (
         <div className={styles.App}>
-            <header>
-                <div>
-                    <HelpButton onClick={() => alert('Help logo clicked!')} />
-                </div>
-            </header>
-
+            <div>
+                <HelpButton onClick={() => alert('Help logo clicked!')} />
+            </div>
             <div className={styles.card}>
-                <div>
-                    <p>Quantum Computer Page</p>
-                </div>
                 <a href="/">Home</a>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
+                <h1>Quantum Computer Visualizer</h1>
             </div>
         </div>
     );
