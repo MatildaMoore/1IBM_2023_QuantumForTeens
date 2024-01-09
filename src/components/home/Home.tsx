@@ -1,6 +1,7 @@
 import { HelpButton, ClickableLogo } from 'components';
 import logo from 'assets/react.svg';
 import styles from './Home.module.scss';
+import { ClickableButton } from 'components/clickable-button/ClickableButton';
 
 
 function Home() {
@@ -11,9 +12,9 @@ function Home() {
             </div>
             <h1 className={styles.title}>Quantum Learning</h1>
             <div className={styles.body_div}> 
-                <button className={styles.logo}> Quantum Computer</button>
-                <button className={styles.logo}>Games</button>
-                <button className={styles.logo}>Q-Sphere</button>
+                <ClickableButton className={styles.logo} dest="/quantum-computer" text="Quantum Computer" />
+                <ClickableButton className={styles.logo} dest="/" text="Games" />
+                <ClickableButton className={styles.logo} dest="/q-sphere" text="Q-Sphere" />
             </div>
         </div>
     );
